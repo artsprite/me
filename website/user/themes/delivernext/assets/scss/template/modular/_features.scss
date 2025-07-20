@@ -1,0 +1,116 @@
+// Modular Features styling
+.modular {
+  .features {
+    padding: 4rem 0 1rem;
+    text-align: center;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    h2 {
+      margin: 0;
+      line-height: 100%;
+      color: $light-gray;
+    }
+
+    hr {
+      margin-top: 4rem;
+    }
+
+    p {
+      margin: 1rem 0;
+
+      @include breakpoint(mobile-only) {
+        font-size: $core-font-size;
+      }
+    }
+
+    .feature-items {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding: 1rem;
+      box-sizing: border-box;
+      height: 100%;
+      border: none;
+      background: none;
+      @extend .default-animation;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        transform: scale(1.03);
+      }
+
+      i.fa {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        justify-self: center;
+      }
+
+      .feature-content {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        text-align: center;
+
+        &.icon-offset {
+          margin-left: 0;
+        }
+
+        h4 {
+          margin: 0 0 0.5rem;
+          font-size: 1.1rem;
+        }
+
+        p {
+          margin: 0.2rem 0;
+          font-size: $core-font-size;
+
+          a {
+            display: inline-block;
+            margin-top: 1rem;
+            text-align: center;
+          }
+        }
+
+        p:last-of-type {
+          align-self: end;
+        }
+      }
+    }
+
+    &.big {
+      text-align: center;
+
+      i.fa {
+        font-size: 4.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .feature-content {
+        padding-right: 2rem;
+
+        &.icon-offset {
+          margin-left: 0;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

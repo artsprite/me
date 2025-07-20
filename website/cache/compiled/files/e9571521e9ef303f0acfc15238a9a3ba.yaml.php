@@ -1,0 +1,49 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/home/me/website/user/config/themes/hola.yaml',
+    'modified' => 1752985377,
+    'size' => 986,
+    'data' => [
+        'enabled' => true,
+        'custom_logo' => [
+            'user/themes/hola/images/logo/849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg' => [
+                'name' => '849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg',
+                'full_path' => '849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg',
+                'type' => 'image/jpeg',
+                'size' => 118374,
+                'path' => 'user/themes/hola/images/logo/849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg'
+            ]
+        ],
+        'footer-text' => '1',
+        'footer-design' => '2',
+        'footer-social' => [
+            0 => [
+                'socialIconClass' => 'fa fa-facebook-square',
+                'socialIconText' => 'Facebook',
+                'socialIconLink' => 'https://www.facebook.com/salinashelton'
+            ],
+            1 => [
+                'socialIconClass' => 'fa fa-twitter',
+                'socialIconText' => 'Twitter',
+                'socialIconLink' => 'https://twitter.com/dunno'
+            ],
+            2 => [
+                'socialIconClass' => 'fa fa-instagram',
+                'socialIconText' => 'Instagram',
+                'socialIconLink' => '#0'
+            ],
+            3 => [
+                'socialIconClass' => 'fa fa-behance',
+                'socialIconText' => 'Behance',
+                'socialIconLink' => '#0'
+            ],
+            4 => [
+                'socialIconClass' => 'fa fa-pinterest',
+                'socialIconText' => 'Pinterest',
+                'socialIconLink' => '#0'
+            ]
+        ],
+        'footer-additional-text' => '3'
+    ]
+];

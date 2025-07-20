@@ -1,0 +1,11 @@
+state: enabled
+email: calvinellis75@gmail.com
+fullname: Salina
+title: Shelton
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$GPNLz3my2SphnUEhxIEzveu4UNwn2OxYCIVPAWMpNyyc1tupQm3Jm

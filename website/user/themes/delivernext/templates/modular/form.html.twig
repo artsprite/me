@@ -1,0 +1,10 @@
+<div class="modular-row contact {{ page.header.module_classes }}">
+    <div class="g-grid">
+        <div id="listing" class="g-block size-2-3">
+            {% include "forms/form.html.twig" %}
+        </div>
+        <div id="sidebar" class="g-block size-1-3">
+            {{ page.content|raw }}
+        </div>
+    </div>
+</div>

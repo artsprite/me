@@ -1,0 +1,39 @@
+{% set blog_url = base_url ~ (page.header.blog_url ?: '/blog') %}
+
+{% embed 'partials/base.html.twig' %}
+	{% block content %}
+    {% if title_choice == 'image' %}
+        <div class="flush-top blog-header blog-header-image" style="background: {{ title_bg_color }} url({{ featured_image.url }}) no-repeat right;">
+    {% else %}
+        <div class="flush-top blog-header" style="background-color: {{ title_bg_color }};">
+    {% endif %}
+        <h1 style="color: {{ title_text_color }}">{{ page.title|raw }}</h1>
+        </div>
+
+		<div class="content-wrapper archive-list g-grid ">
+			<div id="listing" class="g-block size-2-3">
+                {{ page.content|raw }}
+                <div class="g-grid">
+                    {% if config.plugins.taxonomylist.enabled %}
+                    <div class="g-block size-1-2">
+                        <h4>{{ 'DELIVERNEXT.ARCHIVES.BY_TAG'|t }}</h4>
+                        {% include 'partials/sidebar/taxonomylist.html.twig' with {'taxonomy':'tag', 'base_url': blog_url} %}
+                    </div>
+                    {% endif  %}
+
+                    {% if config.plugins.archives.enabled %}
+                    <div class="g-block size-1-2">
+                    <h4>{{ 'DELIVERNEXT.ARCHIVES.BY_MONTH'|t }}</h4>
+                        {% include 'partials/sidebar/archives.html.twig' with {'taxonomy':'month', 'archives_url': blog_url} %}
+                    </div>
+                    {% endif  %}
+                </div>
+            </div>
+			<div id="sidebar" class="g-block size-1-3">
+				{% include 'partials/sidebar.html.twig' with {'archives_url': blog_url, 'base_url': blog_url} %}
+			</div>
+		</div>
+	{% endblock %}
+{% endembed %}
+
+

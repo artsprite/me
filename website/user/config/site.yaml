@@ -1,0 +1,18 @@
+title: 'Salina Shelton'
+default_lang: en
+author:
+  name: 'Salina Shelton'
+  email: info@salinashelton.com
+taxonomies:
+  - 'art therapy'
+metadata:
+  description: 'This is a description test of the Configuration -> Site file'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects: null
+routes: null
+blog:
+  route: /blog

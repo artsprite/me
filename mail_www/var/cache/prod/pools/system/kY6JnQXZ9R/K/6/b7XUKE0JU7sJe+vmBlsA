@@ -1,0 +1,45 @@
+<?php //Mautic.LeadBundle.Entity.Company
+
+return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (\Symfony\Component\VarExporter\Internal\Registry::$factories['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Mautic\\LeadBundle\\Form\\Validator\\Constraints\\UniqueCustomField'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Mautic\\LeadBundle\\Form\\Validator\\Constraints\\UniqueCustomField')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'constraints' => [
+                [
+                    $o[1],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[1],
+                    ],
+                    'Company' => [
+                        $o[1],
+                    ],
+                ],
+            ],
+            'name' => [
+                'Mautic\\LeadBundle\\Entity\\Company',
+            ],
+            'defaultGroup' => [
+                'Company',
+            ],
+            'groups' => [
+                1 => [
+                    'Default',
+                    'Company',
+                ],
+            ],
+            'object' => [
+                1 => 'company',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+)];

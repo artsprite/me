@@ -1,0 +1,27 @@
+enabled: true
+organization:
+  main_contact:
+    name: 'Salina Shelton'
+    address: '980 Talley Rd. '
+    country: null
+    email: info@salinashelton.com
+  description: null
+  logo:
+    user/themes/patron/images/849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg:
+      name: 849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg
+      full_path: 849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg
+      type: image/jpeg
+      size: 118374
+      path: user/themes/patron/images/849124DF-CA6E-4289-88D2-DD73CDAF622E_1_105_c.jpeg
+  background: {  }
+settings:
+  site:
+    copyright: null
+    additional_info: null
+    login_link_visible: true
+    facebook: null
+    links: null
+    favicon: {  }
+  modules:
+    news: null
+spacer: ''
